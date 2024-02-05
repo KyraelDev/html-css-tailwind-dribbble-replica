@@ -1,15 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/54c8c90fcc.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+                theme: {
+                    extend: {
+                        animation: {
+                            marquee: 'marquee 45s linear infinite',
+                            marquee2: 'marquee2 45s linear infinite',
+                        },
+                        keyframes: {
+                            marquee: {
+                                '0%': { transform: 'translateX(0%)' },
+                                '100%': { transform: 'translateX(-100%)' },
+                            },
+                            marquee2: {
+                                '0%': { transform: 'translateX(100%)' },
+                                '100%': { transform: 'translateX(0%)' },
+                            },
+                        },
+                    },
+                },
+            }
+    </script>
     <title>Dribbble Replica</title>
 </head>
 
 <body>
-    
+    <header>
+        <nav>
+            <div class="flex items-center justify-between w-[100vw] h-[70px] bg-white">
+                <div class="flex items-center justify-evenly max-[451px]:hidden max-[768px]:hidden font-bold">
+                    <div class="pr-3">Find talent</div>
+                    <div class="pr-3">Inspiration</div>
+                    <div class="pr-3">Learn design</div>
+                    <div class="pr-3">Jobs</div>
+                    <div class="">Go Pro</div>
+                </div>
+                <i class="fa-solid fa-bars min-[769px]:hidden"></i>
+                <div class="flex w-[100px] h-[50px] items-center justify-evenly bg-[url('https://cdn.discordapp.com/attachments/1197125727267602476/1204005478330408970/logo.png?ex=65d3287b&is=65c0b37b&hm=8dbfa2fa3f3b463bf400063d31c76d563776219f34afe6ac920a40a25b7da825&')] bg-contain bg-no-repeat"></div>
+                <div class="flex items-center justify-center">
+                    <div class="flex items-center">
+                        <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                        <div class="max-[451px]:hidden max-[768px]:hidden">Search...</div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>signup</div>
+                        <div class="max-[451px]:hidden"]>login</div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <jumbotron>
+            <div class="flex flex-col justify-center items-center">
+                <div>testoanimato</div>
+                <div>titolone</div>
+                <div>paragrafo</div>
+                <div>bottone</div>
+            </div>
+        </jumbotron>
+    </section>
+    <section class="flex flex-row justify-between items-center">
+        <div class="relative flex overflow-x-hidden">
+            <div class="py-12 animate-marquee whitespace-nowrap">
+                <span class="text-4xl mx-4">Item 1</span>
+                <span class="text-4xl mx-4">Item 2</span>
+                <span class="text-4xl mx-4">Item 3</span>
+                <span class="text-4xl mx-4">Item 4</span>
+                <span class="text-4xl mx-4">Item 5</span>
+                <span class="text-4xl mx-4">Item 6</span>
+                <span class="text-4xl mx-4">Item 7</span>
+                <span class="text-4xl mx-4">Item 8</span>
+                <span class="text-4xl mx-4">Item 9</span>
+                <span class="text-4xl mx-4">Item 10</span>
+                <span class="text-4xl mx-4">Item 11</span>
+                <span class="text-4xl mx-4">Item 12</span>
+            </div>
+
+            <div class="absolute top-0 py-12 animate-marquee2 whitespace-nowrap">
+                <span class="text-4xl mx-4">Item 1</span>
+                <span class="text-4xl mx-4">Item 2</span>
+                <span class="text-4xl mx-4">Item 3</span>
+                <span class="text-4xl mx-4">Item 4</span>
+                <span class="text-4xl mx-4">Item 5</span>
+                <span class="text-4xl mx-4">Item 6</span>
+                <span class="text-4xl mx-4">Item 7</span>
+                <span class="text-4xl mx-4">Item 8</span>
+                <span class="text-4xl mx-4">Item 9</span>
+                <span class="text-4xl mx-4">Item 10</span>
+                <span class="text-4xl mx-4">Item 11</span>
+                <span class="text-4xl mx-4">Item 12</span>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="flex flex-col items-center">
+            <div>
+                 grid 8x6 img
+            </div>
+            <div>bottone</div>
+        </div>
+    </section>
+    <section>
+        <jumbo2 class="">
+            <div class="flex flex-col justify-between items-center bg-yellow-300">
+                <div>titolo</div>
+                <div>paragrafo</div>
+                <div>
+                    <div>bottone sx</div>
+                    <div>bottone dx</div>
+                </div>
+                <div>link</div>
+            </div>
+        </jumbo2>
+    </section>
+    <section>
+        <div class="relative flex overflow-x-hidden">
+            <div class="py-12 animate-marquee whitespace-nowrap">
+                <span class="text-4xl mx-4">Item 1</span>
+                <span class="text-4xl mx-4">Item 2</span>
+                <span class="text-4xl mx-4">Item 3</span>
+                <span class="text-4xl mx-4">Item 4</span>
+                <span class="text-4xl mx-4">Item 5</span>
+                <span class="text-4xl mx-4">Item 6</span>
+                <span class="text-4xl mx-4">Item 7</span>
+                <span class="text-4xl mx-4">Item 8</span>
+                <span class="text-4xl mx-4">Item 9</span>
+                <span class="text-4xl mx-4">Item 10</span>
+            </div>
+
+            <div class="absolute top-0 py-12 animate-marquee2 whitespace-nowrap">
+                <span class="text-4xl mx-4">Item 1</span>
+                <span class="text-4xl mx-4">Item 2</span>
+                <span class="text-4xl mx-4">Item 3</span>
+                <span class="text-4xl mx-4">Item 4</span>
+                <span class="text-4xl mx-4">Item 5</span>
+                <span class="text-4xl mx-4">Item 6</span>
+                <span class="text-4xl mx-4">Item 7</span>
+                <span class="text-4xl mx-4">Item 8</span>
+                <span class="text-4xl mx-4">Item 9</span>
+                <span class="text-4xl mx-4">Item 10</span>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="flex flex-row justify-evenly items-center">
+            <div>logo</div>
+            <div class="flex flex-row justify-evenly items-center">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+            </div>
+            <div class="flex flex-row justify-evenly items-center">socialicons</div>
+        </div>
+        <div class="flex flex-row justify-evenly items-center">
+            <div>copyright</div>
+            <div>links</div>
+        </div>
+    </footer>
 </body>
+
 </html>
