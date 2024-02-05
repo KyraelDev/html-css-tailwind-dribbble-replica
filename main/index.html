@@ -35,27 +35,36 @@
     <title>Dribbble Replica</title>
 </head>
 
-<body>
+<body class="overflow-x-hidden">
     <header>
         <nav>
-            <div class="border-4 border-red-500 flex justify-between w-[100vw] h-[100px] bg-white p-5">
-                <div class="w-[40%] flex items-center border-4 border-red-500 max-[451px]:hidden max-[768px]:hidden font-bold">
+            <div class=" flex justify-between w-[100vw] h-[100px] bg-white p-5">
+                <div class="w-[40%] flex items-center  max-[451px]:hidden max-[768px]:hidden font-bold">
                     <div class="pr-3">Find talent</div>
                     <div class="pr-3">Inspiration</div>
                     <div class="pr-3">Learn design</div>
                     <div class="pr-3">Jobs</div>
-                    <div class="">Go Pro</div>
+                    <div class="pr-3">Go Pro</div>
                 </div>
-                <i class="border-4 border-red-500 fa-solid fa-bars min-[769px]:hidden"></i>
-                <div class="border-4 border-red-500 flex justify-center items-center w-[20%]"><a href="#"><img class="w-[96px]" src="../assets/logo.png"></a></div>
-                <div class="flex justify-end items-center border-4 w-[40%] border-red-500">
-                    <div class="flex ">
-                        <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                <i class=" fa-solid fa-bars min-[1200px]:hidden flex justify-center items-center max-[451px]:w-20%"></i>
+                <div class=" flex justify-center items-center w-[20%] max-[1200px]:hidden"><a href="#"><img class="w-[96px]" src="../assets/logo.png"></a></div>
+                <div class="flex justify-end items-center w-[40%] max-[1200px]:hidden ">
+                    <div class="flex justify-center items-center">
+                        <div><i class="fa-solid fa-magnifying-glass mr-4"></i></div>
                         <div class="max-[451px]:hidden max-[768px]:hidden">Search...</div>
+                        <div class="max-[451px]:hidden px-4">Log in</div>
+                        <div class="bg-black text-white px-3 py-3 rounded-full font-semibold">Sign up</div>
                     </div>
-                    <div class="flex ">
-                        <div class="max-[451px]:hidden">login</div>
-                        <div class="bg-black text-white px-6 py-3 rounded-full font-semibold">Sign up</div>
+                </div>
+                <!-- Dribble logo e signup nascosti per tabletdesktop -->
+                <div class="min-[1200px]:hidden w-[70%] flex flex-row justify-between">
+                    <div class="relative right-[75px] min-[768px]:right-[180px]  flex justify-center items-center"><a href="#"><img class="w-[96px]" src="../assets/logo.png"></a></div>
+                    <div class="flex justify-end items-center">
+                        <div class="flex justify-evenly items-center">
+                            <div><i class="fa-solid fa-magnifying-glass mr-4"></i></div>
+                            <div class="max-[768px]:hidden">Search...</div>
+                            <div class="max-[451px]:hidden px-4">Log in</div>
+                            <div class="bg-black text-white px-3 py-3 rounded-full font-semibold">Sign up</div>
                     </div>
                 </div>
             </div>
@@ -65,9 +74,9 @@
     <main>
         <section id="jumbo1">
             <jumbotron>
-                <div class="flex flex-col justify-center items-center h-[90vh] text-center p-8">
-                    <div class="relative bottom-[25px] bg-yellow-200 p-4 rounded-full font-semibold">Over 3 million ready-to-work creatives!</div>
-                    <div class="font-semibold text-6xl p-5">The world's destination for design</div>
+                <div class="flex flex-col justify-center items-center min-[451px]:h-[60vh] h-[70vh] text-center p-8">
+                    <div class="relative bottom-[25px] bg-yellow-200 p-4 rounded-full font-semibold max-[451px]:text-[15px]">Over 3 million ready-to-work creatives!</div>
+                    <div class="font-semibold text-6xl p-5 max-[451px]:text-[50px]">The world's destination for design</div>
                     <div class="relative top-[25px] text-lg font-semibold">Get inspired by the work of millions of top-rated designers & agencies around the world.</div>
                     <div class="relative top-[60px] bg-black text-white rounded-full p-5 font-bold">Get started</div>
                 </div>
@@ -75,7 +84,7 @@
         </section>
 
         <section id="marqueetop">
-            <div class="relative flex overflow-x-hidden">
+            <div class="relative flex overflow-x-hidden min-[452px]:w-[100vw] min-[451px]:h-[30vh]">
                 <div class="py-12 animate-marquee whitespace-nowrap flex flex-row mr-[30px]">
                     <img class="w-[100px] h-[100px]" src="../assets/KyraelSTEAM-nobg.png" alt="ciao">
                     <img class="w-[100px] h-[100px]" src="../assets/KyraelSTEAM-nobg.png" alt="ciao">
@@ -109,11 +118,43 @@
         </section>
 
         <section id="img-grid">
-            <div class="flex flex-col items-center">
-                <div>
-                    grid 8x6 img
+            <div class="flex flex-col items-center justify-center">
+                <div class="text-5xl max-[451px]:text-3xl text-center font-semibold px-4 my-10">Explore inspiring designs</div>
+                <div id="grid-immagini" class="w-[90%] max-w-8xl pb-10 gap-10 columns-4 max-[768px]:columns-2 max-[451px]:columns-1 rounded">
+                    <img class="rounded-r-3xl" src="../assets/imgs/img-1.png">
+                    <img class="rounded-r-3xl" src="../assets/imgs/img-2.jpg">
+                    <img class="rounded-r-3xl" src="../assets/imgs/img-3.png">
+                    <img class="rounded-r-3xl" src="../assets/imgs/img-4.png">
+                    <img class="rounded-r-3xl" src="../assets/imgs/img-5.png">
+                    <img class="rounded-r-3xl" src="../assets/imgs/img-6.jpg">
+                    <img class="rounded-r-3xl" src="../assets/imgs/img-7.jpg">
+                    <img class="rounded-r-3xl" src="../assets/imgs/img-8.png">
+                    <img class="rounded-r-3xl" src="../assets/imgs/img-9.jpg">
+                    <img class="rounded-r-3xl" src="../assets/imgs/img-10.png">
+                    <img class="rounded-r-3xl" src="../assets/imgs/img-11.jpg">
+                    <img class="rounded-r-3xl" src="../assets/imgs/img-12.png">
+                    <img class="rounded-r-3xl" src="../assets/imgs/img-13.jpg">
+                    <img class="rounded-r-3xl" src="../assets/imgs/img-14.jpg">
+                    <img class="rounded-r-3xl" src="../assets/imgs/img-15.jpg">
+                    <img class="rounded-r-3xl" src="../assets/imgs/img-16.png">
+                    <img class="rounded-r-3xl" src="../assets/imgs/img-17.jpeg">
+                    <img class="rounded-r-3xl" src="../assets/imgs/img-18.jpg">
+                    <img class="rounded-r-3xl" src="../assets/imgs/img-19.jpg">
+                    <img class="rounded-r-3xl" src="../assets/imgs/img-20.png">
+                    <img class="rounded-r-3xl" src="../assets/imgs/img-21.jpg">
+                    <img class="rounded-r-3xl" src="../assets/imgs/img-22.jpg">
+                    <img class="rounded-r-3xl" src="../assets/imgs/img-23.jpg">
+                    <img class="rounded-r-3xl" src="../assets/imgs/img-24.png">
+                    <img class="rounded-r-3xl" src="../assets/imgs/img-25.png">
+                    <img class="rounded-r-3xl" src="../assets/imgs/img-26.jpg">
+                    <img class="rounded-r-3xl" src="../assets/imgs/img-27.jpg">
+                    <img class="rounded-r-3xl" src="../assets/imgs/img-28.png">
+                    <img class="rounded-r-3xl" src="../assets/imgs/img-29.jpg">
+                    <img class="rounded-r-3xl" src="../assets/imgs/img-30.jpeg">
+                    <img class="rounded-r-3xl" src="../assets/imgs/img-31.png">
+                    <img class="rounded-r-3xl" src="../assets/imgs/img-32.jpg">
                 </div>
-                <div>bottone</div>
+                <div class="bg-white border-2 border-black rounded-full p-4 font-semibold my-5">Browse more inspiration</div>
             </div>
         </section>
 
@@ -164,9 +205,10 @@
     </main>
 
     <footer>
-        <div class="flex flex-row justify-evenly items-center h-[30vh]">
-            <div class="flex w-[100px] h-[50px] items-center justify-evenly bg-[url('https://cdn.discordapp.com/attachments/1197125727267602476/1204005478330408970/logo.png?ex=65d3287b&is=65c0b37b&hm=8dbfa2fa3f3b463bf400063d31c76d563776219f34afe6ac920a40a25b7da825&')] bg-contain bg-no-repeat"></div>
-            <div class="flex flex-row justify-evenly items-center font-semibold">
+        <div class="flex flex-row max-[768px]:flex-col max-[768px]:px-5 max-[451px]:flex-col justify-evenly items-center h-[30vh]">
+            <div class="flex w-[96px] h-[50px] items-center justify-evenly bg-[url('https://cdn.discordapp.com/attachments/1197125727267602476/1204005478330408970/logo.png?ex=65d3287b&is=65c0b37b&hm=8dbfa2fa3f3b463bf400063d31c76d563776219f34afe6ac920a40a25b7da825&')] bg-contain bg-no-repeat"></div>
+            <!-- Desktop/tablet footerlinks -->
+            <div class="flex flex-row max-[451px]:hidden max-[768px]:text-[13px] justify-evenly items-center font-semibold">
                 <div class="mx-4">For designers</div>
                 <div class="mx-4">Hire talent</div>
                 <div class="mx-4">Inspiration</div>
@@ -176,18 +218,38 @@
                 <div class="mx-4">Careers</div>
                 <div class="mx-4">Support</div>
             </div>
-            <div class="flex flex-row justify-evenly items-center">
+            <!-- Mobile footerlinks -->
+            <div class="flex flex-row flex-col justify-evenly items-center font-semibold min-[768px]:hidden">
+                <div class="flex flex-row text-[12px] px-5">
+                    <div class="mx-4">For designers</div>
+                    <div class="mx-4">Hire talent</div>
+                    <div class="mx-4">Inspiration</div>
+                 </div>
+                 <div class="flex flex-row text-[12px] px-5">
+                    <div class="mx-4">Advertising</div>
+                    <div class="mx-4">Blog</div>
+                    <div class="mx-4">About</div>
+                    <div class="mx-4">Careers</div>
+                    <div class="mx-4">Support</div>
+                </div>
+            </div>
+            <!-- endof mobile footerlinks -->
+            <!-- social icons -->
+            <div class="flex flex-row justify-evenly items-center min-[1200px]:scale-[120%]">
                 <i class="fa-brands fa-twitter mx-2"></i>
                 <i class="fa-brands fa-facebook mx-2"></i>
                 <i class="fa-brands fa-instagram mx-2"></i>
                 <i class="fa-brands fa-pinterest mx-2"></i>
             </div>
         </div>
-        <div class="flex flex-row justify-evenly items-center h-[10vh]">
-            <div>© 2024 KyraDev
+        <!-- copyright endoffooter section -->
+        <div class="flex flex-row max-[451px]:flex-col justify-evenly items-center h-[10vh]">
+            <div>
+                © 2024 KyraDev
                 Terms
                 Privacy
-                Cookies</div>
+                Cookies
+            </div>
             <div>links</div>
         </div>
     </footer>
