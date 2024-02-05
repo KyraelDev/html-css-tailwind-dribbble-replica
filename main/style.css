@@ -8,6 +8,11 @@
 }
 
 
-body {
+#bottone {
     font-family: "Open Sans", sans-serif;
 }
+
+#jumbo1, #jumbo2{
+    font-family: "Playfair Display", serif;
+}
+
