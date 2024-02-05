@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    box-sizing: border-box;
+}
+
+
 body {
     font-family: "Open Sans", sans-serif;
+}
+
+.diviso-3{
+   width: calc(100vw/3);
 }

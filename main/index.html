@@ -38,7 +38,7 @@
 <body>
     <header>
         <nav>
-            <div class="flex items-center justify-between w-[100vw] h-[70px] bg-white">
+            <div class="flex items-center justify-between w-[100vw] h-[100px] bg-white p-5">
                 <div class="flex items-center justify-evenly max-[451px]:hidden max-[768px]:hidden font-bold">
                     <div class="pr-3">Find talent</div>
                     <div class="pr-3">Inspiration</div>
@@ -54,106 +54,114 @@
                         <div class="max-[451px]:hidden max-[768px]:hidden">Search...</div>
                     </div>
                     <div class="flex items-center justify-between">
-                        <div>signup</div>
-                        <div class="max-[451px]:hidden"]>login</div>
+                        <div class="max-[451px]:hidden">login</div>
+                        <div class="bg-black text-white px-6 py-3 rounded-full font-semibold">Sign up</div>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
-    <section>
-        <jumbotron>
-            <div class="flex flex-col justify-center items-center">
-                <div>testoanimato</div>
-                <div>titolone</div>
-                <div>paragrafo</div>
+    <main>
+        <section id="jumbo1">
+            <jumbotron>
+                <div class="flex flex-col justify-center items-center h-[90vh] text-center p-8">
+                    <div class="relative bottom-[25px] bg-yellow-200 p-4 rounded-full font-semibold">Over 3 million ready-to-work creatives!</div>
+                    <div class="font-semibold text-6xl p-5">The world's destination for design</div>
+                    <div class="relative top-[25px] text-lg font-semibold">Get inspired by the work of millions of top-rated designers & agencies around the world.</div>
+                    <div class="relative top-[60px] bg-black text-white rounded-full p-5 font-bold">Get started</div>
+                </div>
+            </jumbotron>
+        </section>
+
+        <section id="marqueetop">
+            <div class="relative flex overflow-x-hidden">
+                <div class="py-12 animate-marquee whitespace-nowrap">
+                    <span class="text-4xl mx-4">Item 1</span>
+                    <span class="text-4xl mx-4">Item 2</span>
+                    <span class="text-4xl mx-4">Item 3</span>
+                    <span class="text-4xl mx-4">Item 4</span>
+                    <span class="text-4xl mx-4">Item 5</span>
+                    <span class="text-4xl mx-4">Item 6</span>
+                    <span class="text-4xl mx-4">Item 7</span>
+                    <span class="text-4xl mx-4">Item 8</span>
+                    <span class="text-4xl mx-4">Item 9</span>
+                    <span class="text-4xl mx-4">Item 10</span>
+                    <span class="text-4xl mx-4">Item 11</span>
+                    <span class="text-4xl mx-4">Item 12</span>
+                </div>
+
+                <div class="absolute top-0 py-12 animate-marquee2 whitespace-nowrap">
+                    <span class="text-4xl mx-4">Item 1</span>
+                    <span class="text-4xl mx-4">Item 2</span>
+                    <span class="text-4xl mx-4">Item 3</span>
+                    <span class="text-4xl mx-4">Item 4</span>
+                    <span class="text-4xl mx-4">Item 5</span>
+                    <span class="text-4xl mx-4">Item 6</span>
+                    <span class="text-4xl mx-4">Item 7</span>
+                    <span class="text-4xl mx-4">Item 8</span>
+                    <span class="text-4xl mx-4">Item 9</span>
+                    <span class="text-4xl mx-4">Item 10</span>
+                    <span class="text-4xl mx-4">Item 11</span>
+                    <span class="text-4xl mx-4">Item 12</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="img-grid">
+            <div class="flex flex-col items-center">
+                <div>
+                    grid 8x6 img
+                </div>
                 <div>bottone</div>
             </div>
-        </jumbotron>
-    </section>
-    <section class="flex flex-row justify-between items-center">
-        <div class="relative flex overflow-x-hidden">
-            <div class="py-12 animate-marquee whitespace-nowrap">
-                <span class="text-4xl mx-4">Item 1</span>
-                <span class="text-4xl mx-4">Item 2</span>
-                <span class="text-4xl mx-4">Item 3</span>
-                <span class="text-4xl mx-4">Item 4</span>
-                <span class="text-4xl mx-4">Item 5</span>
-                <span class="text-4xl mx-4">Item 6</span>
-                <span class="text-4xl mx-4">Item 7</span>
-                <span class="text-4xl mx-4">Item 8</span>
-                <span class="text-4xl mx-4">Item 9</span>
-                <span class="text-4xl mx-4">Item 10</span>
-                <span class="text-4xl mx-4">Item 11</span>
-                <span class="text-4xl mx-4">Item 12</span>
-            </div>
+        </section>
 
-            <div class="absolute top-0 py-12 animate-marquee2 whitespace-nowrap">
-                <span class="text-4xl mx-4">Item 1</span>
-                <span class="text-4xl mx-4">Item 2</span>
-                <span class="text-4xl mx-4">Item 3</span>
-                <span class="text-4xl mx-4">Item 4</span>
-                <span class="text-4xl mx-4">Item 5</span>
-                <span class="text-4xl mx-4">Item 6</span>
-                <span class="text-4xl mx-4">Item 7</span>
-                <span class="text-4xl mx-4">Item 8</span>
-                <span class="text-4xl mx-4">Item 9</span>
-                <span class="text-4xl mx-4">Item 10</span>
-                <span class="text-4xl mx-4">Item 11</span>
-                <span class="text-4xl mx-4">Item 12</span>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="flex flex-col items-center">
-            <div>
-                 grid 8x6 img
-            </div>
-            <div>bottone</div>
-        </div>
-    </section>
-    <section>
-        <jumbo2 class="">
-            <div class="flex flex-col justify-between items-center bg-yellow-300">
-                <div>titolo</div>
-                <div>paragrafo</div>
-                <div>
-                    <div>bottone sx</div>
-                    <div>bottone dx</div>
+        <section id="jumbo2">
+            <jumbo2>
+                <div class="w-[100vw] h-[90vh] flex flex-col justify-between items-center bg-yellow-300/70 text-center p-[80px]">
+                    <div class="font-semibold text-5xl max-[451px]:text-4xl px-4">Find your next designer today</div>
+                    <div class="font-semibold text-xl max-[451px]:text-md px-4">The world's leading brands use Dribbble to hire creative talent. Browse millions of top-rated portfolios to find your perfect creative match.</div>
+                    <div class="flex flex-row max-[451px]:flex-col items-center">
+                        <div class="bg-black rounded-full px-6 py-4 text-white m-2 font-semibold">Get started now</div>
+                        <div class="bg-white rounded-full px-6 py-4 text-black m-2 font-semibold">Learn about hiring</div>
+                    </div>
+                    <div class="font-semibold text-xl">Are you a designer? <a class="underline">Join Dribbble</a></div>
                 </div>
-                <div>link</div>
-            </div>
-        </jumbo2>
-    </section>
-    <section>
-        <div class="relative flex overflow-x-hidden">
-            <div class="py-12 animate-marquee whitespace-nowrap">
-                <span class="text-4xl mx-4">Item 1</span>
-                <span class="text-4xl mx-4">Item 2</span>
-                <span class="text-4xl mx-4">Item 3</span>
-                <span class="text-4xl mx-4">Item 4</span>
-                <span class="text-4xl mx-4">Item 5</span>
-                <span class="text-4xl mx-4">Item 6</span>
-                <span class="text-4xl mx-4">Item 7</span>
-                <span class="text-4xl mx-4">Item 8</span>
-                <span class="text-4xl mx-4">Item 9</span>
-                <span class="text-4xl mx-4">Item 10</span>
-            </div>
+            </jumbo2>
+        </section>
 
-            <div class="absolute top-0 py-12 animate-marquee2 whitespace-nowrap">
-                <span class="text-4xl mx-4">Item 1</span>
-                <span class="text-4xl mx-4">Item 2</span>
-                <span class="text-4xl mx-4">Item 3</span>
-                <span class="text-4xl mx-4">Item 4</span>
-                <span class="text-4xl mx-4">Item 5</span>
-                <span class="text-4xl mx-4">Item 6</span>
-                <span class="text-4xl mx-4">Item 7</span>
-                <span class="text-4xl mx-4">Item 8</span>
-                <span class="text-4xl mx-4">Item 9</span>
-                <span class="text-4xl mx-4">Item 10</span>
+        <section id="marqueebottom">
+            <div class="relative flex overflow-x-hidden">
+                <div class="py-12 animate-marquee whitespace-nowrap">
+                    <span class="text-4xl mx-4">Item 1</span>
+                    <span class="text-4xl mx-4">Item 2</span>
+                    <span class="text-4xl mx-4">Item 3</span>
+                    <span class="text-4xl mx-4">Item 4</span>
+                    <span class="text-4xl mx-4">Item 5</span>
+                    <span class="text-4xl mx-4">Item 6</span>
+                    <span class="text-4xl mx-4">Item 7</span>
+                    <span class="text-4xl mx-4">Item 8</span>
+                    <span class="text-4xl mx-4">Item 9</span>
+                    <span class="text-4xl mx-4">Item 10</span>
+                </div>
+
+                <div class="absolute top-0 py-12 animate-marquee2 whitespace-nowrap">
+                    <span class="text-4xl mx-4">Item 1</span>
+                    <span class="text-4xl mx-4">Item 2</span>
+                    <span class="text-4xl mx-4">Item 3</span>
+                    <span class="text-4xl mx-4">Item 4</span>
+                    <span class="text-4xl mx-4">Item 5</span>
+                    <span class="text-4xl mx-4">Item 6</span>
+                    <span class="text-4xl mx-4">Item 7</span>
+                    <span class="text-4xl mx-4">Item 8</span>
+                    <span class="text-4xl mx-4">Item 9</span>
+                    <span class="text-4xl mx-4">Item 10</span>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+    </main>
+
     <footer>
         <div class="flex flex-row justify-evenly items-center">
             <div>logo</div>
