@@ -32,6 +32,27 @@
                 },
             }
     </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            @keyframes badge-color-cycle {
+                0% {
+                    background-color: #ffda79;
+                }
+                25% {
+                    background-color: #ffabe7;
+                }
+                50% {
+                    background-color: #d2dcf3;
+                }
+                75% {
+                    background-color: #edf3d8
+                }
+                100% {
+                    background-color: #ffda79;
+                }
+            }
+        }
+    </style>
     <title>Dribbble Replica</title>
 </head>
 
@@ -75,7 +96,7 @@
         <section id="jumbo1">
             <jumbotron>
                 <div class="flex flex-col justify-center items-center min-[451px]:h-[60vh] h-[70vh] text-center p-8">
-                    <div class="relative bottom-[25px] bg-yellow-200 p-4 rounded-full font-semibold max-[451px]:text-[15px]">Over 3 million ready-to-work creatives!</div>
+                    <div class="relative bottom-[25px] bg-yellow-200 p-4 rounded-full font-semibold max-[451px]:text-[15px] animate-[badge-color-cycle_32s_linear_infinite]">Over 3 million ready-to-work creatives!</div>
                     <div class="font-semibold text-6xl p-5 max-[451px]:text-[50px]">The world's destination for design</div>
                     <div class="relative top-[25px] text-lg font-semibold">Get inspired by the work of millions of top-rated designers & agencies around the world.</div>
                     <div id="bottone" class="relative top-[60px] bg-black text-white rounded-full p-5 font-bold">Get started</div>
